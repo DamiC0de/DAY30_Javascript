@@ -1,15 +1,15 @@
 // Fonction pour vérifier si une phrase est une question
-const estUneQuestion = (phrase) => {
+let estUneQuestion = (phrase) => {
     return phrase.endsWith("?");
   };
   
   // Fonction pour vérifier si une phrase est entièrement en majuscules
-  const estEnMajuscules = (phrase) => {
+  let estEnMajuscules = (phrase) => {
     return phrase === phrase.toUpperCase();
   };
   
   // Fonction pour traiter la conversation avec le bot
-  const traiterConversation = (phrase) => {
+  let traiterConversation = (phrase) => {
     if (phrase === "") {
       return "t'es en PLS ?";
     } else if (estEnMajuscules(phrase)) {
