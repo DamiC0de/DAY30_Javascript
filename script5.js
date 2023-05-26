@@ -13,7 +13,7 @@ const books = [
     { title: 'Guerre et Paix', id: 748147, rented: 19 }
   ];
   
-  // Est-ce que tous les livres ont été au moins empruntés une fois ?
+
   let tousEmpruntes = books.every(function(book) {
     return book.rented > 0;
   });
@@ -21,7 +21,7 @@ const books = [
   console.log("Est-ce que tous les livres ont été au moins empruntés une fois ?");
   console.log(tousEmpruntes ? "Oui, tous les livres ont été empruntés au moins une fois." : "Non, tous les livres n'ont pas été empruntés au moins une fois.");
   
-  // Livre le plus emprunté
+
   let livrePlusEmprunte = books.reduce(function(prev, current) {
     return (prev.rented > current.rented) ? prev : current;
   });
@@ -29,7 +29,7 @@ const books = [
   console.log("Livre le plus emprunté :");
   console.log(livrePlusEmprunte);
   
-  // Livre le moins emprunté
+
   let livreMoinsEmprunte = books.reduce(function(prev, current) {
     return (prev.rented < current.rented) ? prev : current;
   });
@@ -37,7 +37,7 @@ const books = [
   console.log("Livre le moins emprunté :");
   console.log(livreMoinsEmprunte);
   
-  // Trouver le livre avec l'ID: 873495
+
   let livreByID = books.find(function(book) {
     return book.id === 873495;
   });
@@ -45,7 +45,7 @@ const books = [
   console.log("Livre avec l'ID 873495 :");
   console.log(livreByID);
   
-  // Supprimer le livre avec l'ID: 133712
+
   let indexLivreASupprimer = books.findIndex(function(book) {
     return book.id === 133712;
   });
@@ -57,7 +57,7 @@ const books = [
     console.log("Aucun livre trouvé avec l'ID 133712.");
   }
   
-  // Trier les livres par ordre alphabétique
+
 books.sort(function(a, b) {
     let titleA = a.title.toUpperCase();
     let titleB = b.title.toUpperCase();

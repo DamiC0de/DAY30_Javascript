@@ -34,7 +34,7 @@ function traduireCodon(codon) {
     }
   }
   
-  // Fonction pour traduire un ARN en une suite d'acides aminés
+
   function traduireARN(arn) {
     let acidesAmines = [];
   

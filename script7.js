@@ -22,13 +22,13 @@ let estUneQuestion = (phrase) => {
       return "balek.";
     }
   };
+
   
-  // Demande à l'utilisateur de saisir une phrase
   let phrase = prompt("Parle au bot adolescent :");
   
-  // Traite la conversation avec le bot
+
   let reponse = traiterConversation(phrase);
   
-  // Affiche la réponse du bot dans la console
+
   console.log(reponse);
   

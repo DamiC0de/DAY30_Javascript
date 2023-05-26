@@ -19,7 +19,7 @@ const entrepreneurs = [
     { first: 'Peter', last: 'Thiel', year: 1967 }
   ];
 
-//   Afficher les entrepreneurs nés dans les années 70
+
 
 console.log("Entrepreneurs nés dans les années 70 :");
 let entrepreneursAnnees70 = entrepreneurs.filter(function(entrepreneur) {
@@ -27,7 +27,7 @@ let entrepreneursAnnees70 = entrepreneurs.filter(function(entrepreneur) {
 });
 console.log(entrepreneursAnnees70);
 
-// Afficher les noms complets des entrepreneurs
+
 
 console.log("Noms complets des entrepreneurs :");
 entrepreneurs.forEach(function(entrepreneur) {
@@ -35,7 +35,7 @@ entrepreneurs.forEach(function(entrepreneur) {
   console.log(fullName);
 });
 
-// Quel âge aurait chaque inventeur aujourd'hui ?
+
 
 let anneeActuelle = 2023;
 
@@ -47,7 +47,7 @@ entrepreneurs.forEach(function(entrepreneur) {
 });
 
 
-// Trier les entrepreneurs par ordre alphabétique du nom de famille
+
 
 console.log("Entrepreneurs triés par nom de famille :");
 let entrepreneursTries = entrepreneurs.sort(function(a, b) {
